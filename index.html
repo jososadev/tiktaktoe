@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIK TAK TOE</title>
+        <script src="script.js"></script>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            h1 {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .container {
+                margin: 0 auto;
+                width: 500px;
+            }
+
+            .row {
+                display: flex;
+                border-bottom: 1px solid black;
+            }
+
+            .row:last-child {
+                border-bottom: 0;
+            }
+
+            .column {
+                width: 33%;
+                height: 30px;
+                padding: 50px;
+                font-size: 50px;
+                cursor: pointer;
+                font-weight: 700;
+                text-transform: uppercase;
+                text-align: center;
+                border-right: 1px solid black;
+            }
+
+            .column:hover {
+                background-color: rgba(0, 0, 0, 0.3);
+            }
+            
+            .column:last-child {
+                border-right: 0;
+            }
+
+            .label {
+                font-size: 40px;
+                margin-top: 20px;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>TIK TAK TOE</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="col1" class="column"></div>    
+                <div id="col2" class="column"></div>
+                <div id="col3"class="column"></div>
+            </div>
+            <div class="row">
+                <div id="col4"class="column"></div>
+                <div id="col5"class="column"></div>
+                <div id="col6"class="column"></div>
+            </div>
+            <div class="row">
+                <div id="col7"class="column"></div>
+                <div id="col8"class="column"></div>
+                <div id="col9"class="column"></div>
+            </div>
+        </div>
+
+        <div id="label" class="label">
+            Waiting
+        </div>
+    </body>
+</html>
